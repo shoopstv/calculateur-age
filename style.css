@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    margin: 10% auto; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkslateblue;
+    box-shadow: 8px 8px black;
+    color: white;
+    padding: 5% 0;
+}
+
+#currDate {
+    font-size: 20px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;   
+    margin: 10px; 
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgb(115, 221, 235);
+    cursor: pointer;
+    width: 200px;
+}
+
+input[type="date"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(64, 3, 207);
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: blue;
+}
+
+#displayAge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    height: 60%; 
+    background-color: rgb(41, 145, 72);
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    padding: 20px;
+    flex-direction: column;
+    box-shadow: 8px 8px black;
+}
+
+#age {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+}
